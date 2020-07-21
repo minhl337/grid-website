@@ -162,6 +162,10 @@ h6 {
   padding: 3rem;
 }
 
+.l-heading {
+  font-size: 3rem;
+}
+
 .list li {
   padding: 0.5rem 0;
   border-bottom: #555 dotted 1px;
@@ -170,6 +174,25 @@ h6 {
 
 .list li a:hover {
   color: var(--primary-color);
+}
+
+#categories ul li a {
+  color: black;
+}
+#categories ul li a:hover {
+  color: var(--primary-color);
+}
+
+/* -------- Inner Page Grid Container -------- */
+.page-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  margin: 2rem 0;
+  grid-gap: 1.5rem;
+}
+
+.page-container > *:first-child {
+  grid-row: 1 / span 3;
 }
 /* -------- Navigation -------- */
 #main-nav {
@@ -281,10 +304,22 @@ h6 {
   align-items: center;
 }
 
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+  margin-bottom: 0;
+}
 /* ---------- Footer ---------- */
 #main-footer {
   background: var(--dark-color);
   color: white;
+  padding-bottom: 0;
 }
 
 #main-footer img {
@@ -301,9 +336,8 @@ h6 {
   grid-gap: 1.5rem;
 }
 
-#main-footer .footer-container > *:last-child {
+#main-footer .copyright {
   background: #444;
-  grid-column: 1 / span 4;
   padding: 0.5rem;
   text-align: center;
   font-size: 0.75rem;
@@ -318,3 +352,5 @@ h6 {
 #main-footer .footer-container input[type='submit'] {
   width: 90%;
 }
+
+/* ---------- About Page ---------- */
